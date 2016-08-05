@@ -29,6 +29,6 @@ ADMIN_TPL_DIR='admin'
 
 #数据库信息
 DB_TYPE='sqlite'
-DB_STRING=DATA_DIR_PATH+'cms.db'
+DB_STRING=DATA_DIR_PATH+'pspider.db'
 DB_TABEL_PREFIX='cms_'
 
