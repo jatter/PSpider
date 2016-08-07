@@ -3,9 +3,9 @@ CREATE TABLE proxyip
 (
   ipId               integer PRIMARY KEY AUTOINCREMENT,
   address            text NOT NULL,
-  ipName             text,
-  zoneName           char(100),
-  remark             text
+  ipName             text DEFAULT '',
+  zoneName           char(100) DEFAULT '',
+  remark             text DEFAULT ''
 );
 
 --代理服务器表

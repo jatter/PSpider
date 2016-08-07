@@ -1,0 +1,19 @@
+$def with (tplData)
+$:tplData['render'].header()
+    <h2>代理IP管理</h2>
+<table width="800" border="0" cellspacing="0" cellpadding="1" class="list">
+    <tr>
+        <th>ID</th>
+        <th>地址</th>
+        <th>名称</th>
+        <th>区域</th>
+        <th>备注</th>
+    </tr>
+$for i in tplData['proxyIpList']:
+    <tr> <td>$:i['ipId'] </td> <td>$:i['address']</td><td>$:i['ipName']</td><td>$:i['zoneName']</td><td>$:i['remark']</td>
+    </tr>
+</table>
+<nav class="navigation">
+    $:tplData['pageString']
+</nav>
+$:tplData['render'].footer()

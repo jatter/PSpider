@@ -5,4 +5,4 @@ __author__ = 'yuntao'
 from cms import *
 from base import *
 from comment import *
-from testcase import *
+from proxyip import *
